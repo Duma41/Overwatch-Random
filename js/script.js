@@ -5,32 +5,23 @@ var heroes = ["doomfist", "genji", "mccree", "pharah", "reaper",
   "torbjorn", "d.va", "orisa", "reinhard", "roadhog", "winston", "zarya", "ana",
    "brigitte", "lucio", "mercy", "moira", "symmetra", "zenyatta"];
 
-var chosenHero = heroes[Math.floor(Math.random() * heroes.length)];
 
-//Random hero
-document.querySelector('.btns').addEventListener('click', function() {
-    var chosenHero = heroes[Math.floor(Math.random() * heroes.length)];
-    document.getElementById('chosen-hero').textContent = chosenHero;
-    document.getElementById('chosen-here-img').src = "img/" + chosenHero + ".png";
-})
+for (i=0; i < heroes.length; i++) {
+	document.getElementById('cake').insertAdjacentHTML('afterend','<div class="heroes" id="'+heroes[i]+'"><img src="img/'+heroes[i]+'.png"/><p>'+heroes[i]+'.png</p></div>');
+}
 
+var playerCount = 0;
+var player = [];
 
-//Add player
 document.getElementById('add').addEventListener('click', function() {
+	playerCount++;
 	var playerName = document.getElementById('player-name');
-	document.getElementById('player-name').createElement('<p>'+playerName+'</p>');
+	document.getElementById('player-name').insertAdjacentHTML('beforebegin','<div class="playerHero"><p>'+playerName.value+'</p></div>');
+	player[playerCount] = heroes[Math.floor(Math.random()* heroes.length)];
+	
+
 })
 
+//random
 
-
-//1) Fix add player
-
-
-
-
-//2) Give players colors
-
-
-
-
-//3) put all heroes on the page
+//
