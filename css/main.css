@@ -64,6 +64,12 @@ h2 a:hover {
 }
 
 
+
+#interactions {
+    color: black;
+}
+
+
 .playerHero:nth-child(3) {
     background-color: blue;
 }
