@@ -11,42 +11,6 @@ html, body {
     color: #ffa500;
 }
 
-a h2 {
-    color: #ffa500;
-}
-
-a h2:hover {
-    color: #ffa500;
-    text-decoration: underline;
-    text-decoration-color: #ffa500;
-}
-
-h2 a {
-    color: #ffa500;
-}
-
-h2 a:hover {
-    color: #ffa500;
-    text-decoration: underline;
-    text-decoration-color: #ffa500;
-}
-
-.boxboxplease {
-	display: block;
-}
-
-.btns {
-    margin-bottom: 5px;
-    height: 50px;
-    border-color: #ffa500;
-    background-color: #ffa500;
-    color: Black;
-    box-shadow: 0;
-    border-radius: 5px;
-    width: 100%;
-    font-size: 2rem;
-}
-
 /***************
 **Overwatch
 ****************/
@@ -64,33 +28,31 @@ h2 a:hover {
 }
 
 
-
 #interactions {
     color: black;
 }
 
-
-.playerHero:nth-child(3) {
+.playerHero:nth-child(1) {
     background-color: blue;
 }
 
-.playerHero:nth-child(4) {
+.playerHero:nth-child(2) {
     background-color: red;
 }
 
-.playerHero:nth-child(5) {
+.playerHero:nth-child(3) {
     background-color: green;
 }
 
-.playerHero:nth-child(6) {
+.playerHero:nth-child(4) {
     background-color: yellow;
 }
 
-.playerHero:nth-child(7) {
+.playerHero:nth-child(5) {
     background-color: purple;
 }
 
-.playerHero:nth-child(8) {
+.playerHero:nth-child(6) {
     background-color: orange;
     color: white;
 }
