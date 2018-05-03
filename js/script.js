@@ -21,6 +21,7 @@ var playerCount = 0;
 var player = [];
 
 function newPlayer() {
+	
 	if (playerCount < 6) {
 		playerCount++;
 		var playerName = document.getElementById('player-name');
@@ -35,13 +36,17 @@ function newPlayer() {
 }
 
 function scramble() {
+
     for (i=1; i < playerCount+1; i++) {
-    heroes.push(player[i]);
-    document.getElementById(player[i]).classList.remove('playerHero'+i);
-	player[i] = heroes[Math.floor(Math.random()* heroes.length)];
-	var index = heroes.indexOf(player[i]);
-	heroes.splice(index, 1);
-    document.getElementById(player[i]).classList.add('playerHero'+i);
+        heroes.push(player[i]);
+        document.getElementById(player[i]).classList.remove('playerHero'+i);
+    };
+
+	for (i=1; i < playerCount+1; i++) {
+		player[i] = heroes[Math.floor(Math.random()* heroes.length)];
+		var index = heroes.indexOf(player[i]);
+		heroes.splice(index, 1);
+	    document.getElementById(player[i]).classList.add('playerHero'+i);
     };
 }
 
