@@ -1,16 +1,18 @@
 //Heroes
 var heroes = ["doomfist", "genji", "mccree", "pharah", "reaper",
- "soldier76", "sombra", "tracer", "bastion", "hanzo", "junkrat", "mei",
+ "soldier76", "sombra", "tracer", "bastion", "hanzo", "widowmaker", "junkrat", "mei",
   "torbjorn", "d.va", "orisa", "reinhard", "roadhog", "winston", "zarya", "ana",
    "brigitte", "lucio", "mercy", "moira", "symmetra", "zenyatta"];
 heroes.reverse();
 
 
 for (i=0; i < heroes.length; i++) {
-	document.getElementById('cake').insertAdjacentHTML('afterend','<div class="heroes" id="'+heroes[i]+'"><img src="img/'+heroes[i]+'.png"/><p>'+heroes[i]+'</p></div>');
+	document.getElementById('cake').insertAdjacentHTML('afterend',
+'<div  tabindex="-1" class="herobox inlineThis pos" id="'+heroes[i]+'"><img src="img/'+heroes[i]+'.png"/><span class="container"><span class="portrait-title">'+heroes[i]+'</span></span></div>');
 }
 
 heroes.reverse();
+
 document.getElementById('add').addEventListener('click', newPlayer);
 document.getElementById('scramble').addEventListener('click', scramble);
 
@@ -22,7 +24,7 @@ function newPlayer() {
 	if (playerCount < 6) {
 		playerCount++;
 		var playerName = document.getElementById('player-name');
-		document.getElementById('player-name').insertAdjacentHTML('beforebegin','<div class="playerHero"><p>'+playerName.value+'</p></div>');
+		document.getElementById('newPlayer').insertAdjacentHTML('beforebegin','<div class="playerHero name inlineThis"><p>'+playerName.value+'</p></div>');
 		player[playerCount] = heroes[Math.floor(Math.random()* heroes.length)];
 		var index = heroes.indexOf(player[playerCount]);
 		heroes.splice(index, 1);

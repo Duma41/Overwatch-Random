@@ -4,32 +4,91 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
         <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
         <title>Overwatch Random</title>
     </head>
     <body>
-
-        <div class="row">
-                <center>
-                    <div>
-                        <img src="" id="cake"/>
-                        <p id="chosen-hero">-</p>
-                    </div>
-                    <div>
-                        <img src="" id="chosen-here-img"/>
-                        <p id="chosen-hero">-</p>
-                    </div>
-                    <div id="interactions">
-                        <input id="player-name" value="Playername">
-                        <button id="add">Add</button>
-                        <button id="scramble">Scramble</button>
-                    </div>
-                </center>
+        <div class="container">
+            <div class="text-center banner">
+                <img src="img/logo.png"/>
+            </div>
+            <div class="hero-container">
+                <div class="row" id="cake">
+                </div>
+            </div>
         </div>
+
+
+
+
+        <hr class="footer-rule">
+
+        <section id="players" class="container">
+            <div class="row nudge">
+
+
+
+
+<!--
+
+                <div class="overwatch-player">          
+                    <div class="input-group">
+                       <input type="text" class="form-control name" id="player-name"><span></span>
+                       <span class="input-group-btn">
+                            <button class="btn btn-default pos" type="button"  id="add">+</button>
+                            <button class="btn btn-default neg" type="button">x</button>
+                       </span>
+                    </div>
+                </div>
+
+-->
+
+                    <div class="overwatch-player pullRight">          
+                    <div class="input-group">
+                       <input type="text" class="form-control name" id="player-name" placeholder="playername">
+                            <button class="btn btn-default pos" type="button" id="add">add</button>
+                    </div>
+              <div id="newPlayer">
+              </div>
+                </div>
+            </div>  
+        </section>
+            </div>
+        </section>
+
+        <section id="footer" class="overwatch-footer">
+            <hr class="footer-rule">
+            <button  class="button inlineThis"  id="scramble">SCRAMBLE HEROES</button>
+            <hr class="footer-rule">
+        </section>
+
+
+
+
+
+
+<!--
+<section id="players" class="container">
+            <div class="row nudge">
+                <div class="overwatch-player">          
+                    <div class="input-group">
+                       <p class="name"><span>Genji</span></p>
+                    </div>
+                </div>
+-->
+
+
+
+     <!--   <div id="interactions">
+            <input id="player-name" value="Playername">
+            <button id="add">Add</button>
+            <button id="scramble">Scramble</button>
+        </div>
+-->
+
+    </div>
     </center>
 
     <script src="js/script.js"></script>
