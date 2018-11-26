@@ -2,7 +2,7 @@
 var heroes = ["doomfist", "genji", "mccree", "pharah", "reaper",
  "soldier76", "sombra", "tracer", "bastion", "hanzo", "widowmaker", "junkrat", "mei",
   "torbjorn", "d.va", "orisa", "reinhard", "roadhog", "winston", "wrecking ball", "zarya", "ana",
-   "brigitte", "lucio", "mercy", "moira", "symmetra", "zenyatta"];
+   "brigitte", "lucio", "mercy", "moira", "symmetra", "zenyatta", "ashe"];
 heroes.reverse();
 
 
